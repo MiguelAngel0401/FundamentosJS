@@ -24,6 +24,12 @@ const dividir = ()=>{
     const valores = getValues();
     result.value = valores[0] / valores[1];
 }
-const Limpiar = () => {
+const limpiar = () => {
     result.value = '';
+    num1.value = '';
+    num2.value = '';
 }
+ const random = () =>{
+    num1.value= Math.round(Math.random() * 100000)
+    num2.value= Math.round(Math.random() * 100000)
+ }
