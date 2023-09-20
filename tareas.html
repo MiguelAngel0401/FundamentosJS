@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas con Javascript</title>
+    <style>
+
+        body{
+            background-color: rgb(136, 192, 202);
+        }
+
+        h1{
+            font-family: 'Oswald', sans-serif;
+font-family: 'Quicksand', sans-serif;
+        }
+
+        div{
+            background-color: rgb(127, 255, 127);
+        }
+          button{
+            width: 150px;
+            font-size: large;
+        }
+
+        .container{
+            width: 300px;
+            padding: 50px;
+            height: 700px;
+            margin: 0 auto;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 5px 5px  5px 5px  rgb(240, 148, 29);
+
+        }
+
+        .container input{
+          border-radius: 5px;
+          width: 250px;
+          padding: auto;
+          height: 30px;
+          background-color: rgb(70, 212, 212);
+        }
+
+        .container button{
+            margin: auto;
+            width: 90px;
+            height: 50px;
+            padding: auto;
+            border-radius: 5px;
+            background-color: rgb(58, 245, 98);
+            background-color: rgb(52, 129, 216);
+        }
+
+        .container button:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas con Javascript</h1>
+        <div id="formulario">
+            <h2>Ingresa Tarea</h2>
+            <textarea name="" id="inputTarea" cols="30" rows="10"></textarea>
+            <h2>Horaa</h2>
+            <input type="time" name="" id="tiempo">
+            <button onclick="addTarea()">Agregar Tarea</button>
+        </div>
+        <div id="tareas">
+            <h2>Tareas</h2>
+            <ul></ul>
+        </div>
+    </div>
+    <script src="./tareas.js"></script>
+</body>
+</html>
